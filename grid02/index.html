@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout 01</title>
+    <title>Grid Layout 02</title>
     <style>
         div.container {
             border: 3px solid lightblue;
             display: grid;
             height: 300px;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, auto) / repeat(3, auto);
             gap: 25px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            place-items: start center;
+            place-content: space-between end;
         }
 
         div.item {
